@@ -356,8 +356,7 @@ def run():
     # Save the data after execution
     # Directory name
     head_chr = sys.argv[0][:-3]
-    dir_name_list = ["DesNormPsychInit" + f"{DES_NORM_PSYCH_INIT_MU}",
-                     "NormX" + f"{NORM_VALUE_X}",
+    dir_name_list = ["NormX" + f"{NORM_VALUE_X}",
                      "NormY" + f"{NORM_VALUE_Y}"]
     dir_name = "_".join(dir_name_list)
 
@@ -382,8 +381,7 @@ def run():
 
 
 # Receive command line arguments
-DES_NORM_PSYCH_INIT_MU = float(sys.argv[1])
-RUN = int(sys.argv[2])
+RUN = int(sys.argv[1])
 
 # Execute
 for NORM_VALUE_X in np.round(np.linspace(0, 1, 11), 1):
